@@ -8,10 +8,10 @@ eureka:
     hostname: localhost
     
 datasource:
-    driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: root
-    url: jdbc:postgresql://localhost:5432/demo_mwemba
+  driver-class-name: org.postgresql.Driver
+  username: postgres
+  password: root
+  url: jdbc:postgresql://localhost:5432/demo_mwemba
 jpa:
   show-sql: true
   generate-ddl: true
@@ -23,14 +23,3 @@ sql:
     platform: postgres
     mode: always
     continue-on-error: true
-    
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: guest
-  password: guest
-security:
-  oauth2:
-    resourceserver:
-      jwt:
-        issuer-uri: http://localhost:8180/auth/realms/demo_mwemba
