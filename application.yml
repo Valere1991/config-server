@@ -12,20 +12,18 @@ datasource:
     username: postgres
     password: root
     url: jdbc:postgresql://localhost:5432/demo_mwemba
-  jpa:
-    show-sql: true
-    generate-ddl: true
-    hibernate:
-      ddl-auto: update
-    database: postgresql
-  sql:
-    init:
-      platform: postgres
-      mode: always
-      continue-on-error: true
+jpa:
+  show-sql: true
+  generate-ddl: true
+  hibernate:
+    ddl-auto: update
+  database: postgresql
+sql:
+  init:
+    platform: postgres
+    mode: always
+    continue-on-error: true
     
-zipkin:
-  base-url: http://127.0.0.1:9411/
 rabbitmq:
   host: localhost
   port: 5672
